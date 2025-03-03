@@ -1,0 +1,25 @@
+type: Radar
+name: Floodlight
+description: Lights up blocks nearby.
+lightColor: c8e9ff
+lightRadius: 40
+emitLight: true
+discoveryTime: 120
+glowColor: c8e9ff
+size: 2
+fogRadius: 20
+outlineColor: 22222e
+category: effect
+research: core-1
+requirements: [
+  tantalum/50
+  nihilite/30
+]
+researchCost: [
+  tantalum/250
+  nihilite/150
+]
+consumes: {
+  power: 0.75
+}
+squareSprite: false

@@ -1,0 +1,209 @@
+name: emperor
+description: Fires large missiles and machinegun rounds enemies. Can step over most terrain.
+type: legs
+lightColor: ffc4c4
+outlineColor: 22222e
+outlineRadius: 4
+itemCapacity: 0
+speed: 0.4
+drag: 0.1
+hitSize: 20
+rotateSpeed: 1.2
+health: 6700
+armor: 16
+stepShake: 2
+legCount: 6
+legLength: 20
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 7
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.95
+legForwardScl: 0.9
+rippleScale: 0.8
+legMoveSpace: 1.5
+legGroupSize: 3
+allowLegStep: true
+hovering: true
+legPhysicsLayer: false
+shadowElevation: 0.2
+groundLayer: 74
+parts: [
+  {
+    type: RegionPart
+    suffix: -glow
+    blending: additive
+    layerOffset: 0.001
+    color: ffc4c450
+    outline: false
+    mirror: false
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0.4
+    x: 0
+    y: -5
+    effect: missileTrailShort
+    teamColor: true
+    interval: 1
+  }
+]
+  weapons: [
+    {  
+      name: mech-t3-weapon2
+      x: 14
+      y: -2
+      rotate: true
+      mirror: false
+      layerOffset: 0.001
+      reload: 130
+      recoil: 2
+      shootCone: 20
+      shootSound: missileLarge
+      bullet: {
+          type: ArtilleryBulletType
+          sprite: missile-large
+          speed: 4
+          lifetime: 30
+          drag: -0.05
+          pierce: false
+          damage: 60
+          splashDamage: 80
+          fragBullets: 7
+          fragLifeMin: 0.8
+          fragBullet: {
+            type: BasicBulletType
+            sprite: large-bomb
+            speed: 8
+            lifetime: 40
+            weaveScale: 20
+            weaveMag: 20
+            pierce: false
+            damage: 20
+            splashDamage: 20
+            splashDamageRadius: 16
+            trailColor: ffc4c4
+            hitColor: ffc4c4
+            frontColor: ffffff
+            backColor: ffc4c4
+            lightColor: ffc4c4
+            despawnHit: true
+            hitEffect: {
+              type: ExplosionEffect
+              lifetime: 20
+              waveStroke: 2
+              waveColor: ffc4c4
+              sparkColor: ffc4c4
+              smokeColor: ffc4c4
+              sparks: 6
+              sparkRad: 20
+              sparkLen: 3
+              sparkStroke: 1.2
+              smokeSize: 10
+              smokeSizeBase: 0
+              smokes: 3
+            }
+            trailLength: 6
+            trailWidth: 4
+            width: 16
+            height: 18
+            trailEffect: none
+            trailRotation: true
+            trailInterval: 5
+            fragBullets: 3
+            fragLifeMin: 0.8            
+          }
+          splashDamageRadius: 20
+          trailColor: ffc4c4
+          hitColor: ffc4c4
+          frontColor: ffffff
+          backColor: ffc4c4
+          lightColor: ffc4c4
+          despawnHit: true
+          hitEffect: {
+            type: ExplosionEffect
+            lifetime: 60
+            waveStroke: 4
+            waveColor: ffc4c4
+            sparkColor: ffc4c4
+            smokeColor: ffc4c4
+            sparks: 12
+            sparkRad: 30
+            sparkLen: 6
+            sparkStroke: 2.4
+            smokeSize: 10
+            smokeSizeBase: 0
+            smokes: 4
+          }
+          trailLength: 6
+          trailWidth: 4
+          width: 16
+          height: 18
+          trailEffect: shootSmokeTitan
+          trailRotation: true
+          trailInterval: 4
+       }
+    }
+{  
+      name: mech-t3-weapon1
+      x: -14
+      y: -2
+      rotate: true
+      rotationLimit: 30
+      mirror: true
+      layerOffset: -0.001
+      reload: 10
+      shoot: {
+        spread: 4
+        type: ShootAlternate
+      }
+      recoil: 3
+      shootCone: 20
+      shootSound: malignShoot
+      bullet: {
+          type: BasicBulletType
+          sprite: shell
+          speed: 8
+          lifetime: 30
+          pierce: false
+          damage: 30
+          trailColor: ffc4c4
+          hitColor: ffc4c4
+          frontColor: ffffff
+          backColor: ffc4c4
+          lightColor: ffc4c4
+          despawnHit: true
+          weaveMag: 2
+          weaveScale: 6
+          hitEffect: {
+            type: ExplosionEffect
+            lifetime: 30
+            waveStroke: 4
+            waveColor: ffc4c4
+            sparkColor: ffc4c4
+            smokeColor: ffc4c4
+            sparks: 6
+            sparkRad: 30
+            sparkLen: 4
+            sparkStroke: 1.2
+            smokeSize: 0
+            smokeSizeBase: 0
+            smokes: 0
+          }
+          trailLength: 6
+          trailWidth: 3
+          width: 14
+          height: 18
+          trailEffect: hitSquaresColor
+          trailRotation: true
+          trailInterval: 4
+       }
+    }
+]
+researchCostMultiplier: 1.5
+research: 10j-00-ground-mounting-bay
+type: legs

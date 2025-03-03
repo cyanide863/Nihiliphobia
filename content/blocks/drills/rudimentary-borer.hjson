@@ -1,0 +1,29 @@
+name: Rudimentary Borer
+description: Extracts resources from the ground below it.
+squareSprite: false
+type: Drill
+health: 500
+category: production
+size: 3
+drillTime: 200
+tier: 1
+liquidBoostIntensity: 1.5
+consumes: {
+  liquids: {
+  liquid: chlorine
+  amount: 0.3333
+  booster: true
+  optional: true
+ }
+}
+requirements: [
+  tantalum/30
+  nihilite/20
+]
+research: {
+  planet: ceriumir
+	parent: core-1
+	requirements: [
+	  tantalum/10
+	]
+}

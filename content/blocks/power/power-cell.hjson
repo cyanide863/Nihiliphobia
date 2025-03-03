@@ -1,0 +1,24 @@
+type: ConsumeGenerator
+name: Emergency power generator
+description: Mixes hydrazine ice and chlorine, causing a reaction that releases power.
+size: 2
+category: power
+research: core-1
+buildVisibility: sandboxOnly
+lightColor: c8e9ff
+requirements: [
+  tantalum/50
+  hydrazine-ice/45
+  nihilite/30
+]
+researchCost: [
+  tantalum/250
+  hydrazine-ice/240
+  nihilite/150
+]
+consumes: {
+}
+hasLiquids: true
+liquidCapacity: 30
+powerProduction: 2.5
+squareSprite: false

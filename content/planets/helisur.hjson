@@ -1,0 +1,57 @@
+    generator: "AsteroidGenerator",
+    parent: "erox",
+    iconColor: 1a236e,
+    orbitRadius: 3,
+    orbitOffset: 90
+    hasAtmosphere: false,
+    updateLighting: false,
+    drawOrbit: false,
+    solarSystem: black-hole-sun
+    accessible: true,
+    alwaysUnlocked: true,
+    clearSectorOnLose: true,
+    allowSectorInvasion: false,
+	allowLaunchToNumbered: false,
+    radius: 0.8,
+    hiddenItems: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "spore-pod",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "metaglass",
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst"
+    ],
+mesh: [
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.2
+    color1: 909fa6
+    color2: b6caeb
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.77
+    mag: 1.4
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+    seed: 28
+  }
+]

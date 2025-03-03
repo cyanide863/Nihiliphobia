@@ -1,0 +1,4 @@
+type: staticWall
+name: Withered Nihilite Wall Ore
+variants: 2
+itemDrop: nihilite

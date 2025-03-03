@@ -1,0 +1,114 @@
+# The planet's display name. If you want to support multiple languages, use bundles instead!
+localizedName: Acheron
+
+# The mesh of this star. SunMesh should now be supported in v146, thanks to my PR. (hehe, shameless plug)
+mesh: [
+  {
+    type: HexSkyMesh
+    radius: 0
+    divisions: 5
+    speed: 0
+    color: ffffff
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 1
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.01
+    divisions: 5
+    speed: 0.4
+    color: 92929295
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.8
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.025
+    divisions: 5
+    speed: 0.4
+    color: 69696990
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.7
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.05
+    divisions: 5
+    speed: 0.4
+    color: 50505080
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.6
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.075
+    divisions: 5
+    speed: 0.4
+    color: 44444470
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.1
+    divisions: 5
+    speed: 0.4
+    color: 32323260
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.4
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.125
+    divisions: 5
+    speed: 0.4
+    color: 00000050
+    octaves: 1
+    persistence: 1
+    scl: 1
+    thresh: 0.9
+  }
+]
+radius: 8
+# Whether this can be landed on.
+accessible: false
+# This is self-explanatory...
+visible: true
+# Also self-explanatory...
+hasAtmosphere: false
+# Whether this planet (or, in this case, star) is blooming. Just put it to true in
+# your star and don't bother.
+bloom: true
+# Spacing between a parent (this) and satellites.
+orbitSpacing: 8
+# Attach a solar system to the star itself so it shows up in the UI.
+solarSystem: black-hole-sun
+# The parent of the planet. Initiating a new solar system should work in v146,
+# but I couldn't find a way to leave the parent null as it is currently required to declare for JSON planets.
+# So we set the parent to sun for a band-aid solution.
+# (A quick reminder: if you find a way to set this field to null, let me know!)
+parent: sun
+# Orbit radius of this planet. (Just to make it very far from the sun, I guess?)
+# Part 2 of the band-aid solution.
+orbitRadius: 12000
+# Whether to draw this planet's orbit.
+drawOrbit: false
+# Whether this planet is tidally locked. No clue what this means, go check Wikipedia
+# or something.
+tidalLock: true
+# The color of the planet's icon displayed in top-left dialog.
+iconColor: ffe06f
+# Icon's name displayed in top-left dialog. (commandRally is a circle)
+icon: commandRally

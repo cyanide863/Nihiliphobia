@@ -1,0 +1,14 @@
+type: BeamNode
+name: Tesla Distributor
+description: Distributes power in an orthrogonal grid, used in smaller power grids.
+size: 1
+health: 40
+squareSprite: false
+laserRange: 6
+requirements: [
+  tantalum/8
+  hydrazine-ice/12
+]
+category: power
+research: tesla-node
+researchCostMultiplier: 0.5

@@ -1,0 +1,15 @@
+type: BeamNode
+name: Tesla Node
+description: Distributes power in an orthrogonal grid.
+size: 3
+health: 40
+squareSprite: false
+range: 16
+laserWidth: 0.8
+requirements: [
+  tantalum/120
+  hydrazine-ice/90
+]
+category: power
+research: core-1
+researchCostMultiplier: 0.5

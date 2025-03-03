@@ -1,0 +1,11 @@
+type: DuctRouter
+squareSprite: false
+name: Item Duct Splitter
+description: Distributes Items In three Directions
+requirements: [
+  nihilite/6
+  tantalum/12
+]
+category: distribution
+speed: 3
+research: item-duct

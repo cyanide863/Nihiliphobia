@@ -1,0 +1,6 @@
+name: Hydrazine Ice Wall
+type: StaticWall
+variants: 2
+attributes: {
+  hydrazine: 1
+}

@@ -1,0 +1,10 @@
+name: Nitrogen
+description: Used in synthesis and as a coolant.
+heatCapacity: 0
+explosiveness: 0
+temperature: 0.2
+coolant: true
+gas: true
+color: c5abe8
+flammability: 0
+research: nihilite

@@ -1,0 +1,87 @@
+type: ConsumeGenerator
+name: Hydrazine Reaction cell
+description: Mixes hydrazine ice and chlorine, causing a reaction that releases power.
+size: 3
+category: power
+research: core-1
+requirements: [
+  tantalum/50
+  hydrazine-ice/45
+  nihilite/30
+]
+researchCost: [
+  tantalum/250
+  hydrazine-ice/240
+  nihilite/150
+]
+consumes: {
+  liquid: chlorine/0.15
+  items: [
+    hydrazine-ice/2 
+  ]
+}
+hasLiquids: true
+liquidCapacity: 30
+itemDuration: 60
+powerProduction: 5
+generateEffectRange: 1
+effectChance: 0.5
+generateEffect: [
+  {
+    type: ParticleEffect
+    particles: 4
+    baseRotation: 72
+    cone: 20
+    sizeFrom: 2
+    sizeTo: 0
+    length: 65
+    colorFrom: 2f3436
+    colorTo: 1f212200
+    lifetime: 200
+    startDelay: 0
+    useRotation: false
+  }
+]
+ambientSound: steam
+ambientSoundVolume: 0.1
+squareSprite: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -lower
+    }
+    {
+      type: DrawPistons
+      suffix: -piston
+      sides: 4
+      angleOffset: 45
+      sinMag: 2.5
+      sinScl: 5
+      sideOffset: 1.6
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: chlorine
+      padding: 2
+      alpha: 5
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawGlowRegion
+      glowScale: 20
+      color: c8e9ff
+      alpha: 0.7
+    }
+    {
+      type: DrawGlowRegion
+      suffix: -exhaust
+      glowScale: 15
+      color: 2f3436
+      alpha: 1
+    }
+  ]
+}

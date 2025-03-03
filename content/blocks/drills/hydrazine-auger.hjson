@@ -1,0 +1,16 @@
+type: WallCrafter
+name: Hydrazine Auger
+description: Mines Hydrazine from Hydrazine ice walls. 
+size: 3
+category: production
+research: core-1
+requirements: [
+  tantalum/40
+  nihilite/35
+]
+drillTime: 180
+output: hydrazine-ice
+attribute: hydrazine
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false

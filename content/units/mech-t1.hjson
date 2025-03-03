@@ -1,0 +1,70 @@
+type: mech
+name: Tsar
+description: Fires plasma shells at enemies.
+speed: 0.5
+flying: false
+health: 780
+armor: 8
+hitSize: 12
+outlineColor: 22222e
+outlineRadius: 4
+mechLegColor: 22222e
+parts: [
+  {
+    type: RegionPart
+    suffix: -glow
+    blending: additive
+    color: ffc4c450
+    layerOffset: 0.001
+    outline: false
+    mirror: false
+  }
+]
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 1.1
+    x: 0
+    y: -2.4
+    effect: artilleryTrailSmoke
+    teamColor: true
+    interval: 1
+  }
+]
+  weapons: [
+    {  
+      name: mech-t1-gunner
+      x: 0
+      y: 0
+      rotate: true
+      mirror: false
+      reload: 40
+      layerOffset: 0.002
+      shootCone: 20
+      shootSound: plasma-gun
+      bullet: {
+          type: BasicBulletType
+          sprite: missile-large
+          speed: 6
+          lifetime: 30
+          pierce: false
+          damage: 40
+          pierce: true
+          pierceCap: 2
+          trailColor: ffc4c4
+          hitColor: ffc4c4
+          frontColor: ffffff
+          backColor: ffc4c4
+          lightColor: ffc4c4
+          trailLength: 8
+          trailWidth: 3
+          width: 14
+          height: 16
+          trailEffect: overdriven
+          trailRotation: true
+          trailInterval: 1
+      }
+    }
+]
+researchCostMultiplier: 1.5
+research: 10j-00-ground-mounting-bay

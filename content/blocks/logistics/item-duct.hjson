@@ -1,0 +1,9 @@
+type: Duct
+name: Item Duct
+description: Moves items forward
+requirements: [
+  nihilite/1
+]
+bridgeReplacement: item-duct-overpass
+category: distribution
+speed: 6.5

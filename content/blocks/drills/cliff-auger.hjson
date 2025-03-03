@@ -1,0 +1,29 @@
+type: BeamDrill
+name: Nihilite Auger
+description: Mines Ores from ore walls.
+size: 3
+category: production
+research: core-1
+requirements: [
+  tantalum/35
+  nihilite/40
+]
+sparks: 5
+sparkRecurrence: 1.5
+tier: 2
+optionalBoostIntensity: 2
+heatColor: 95bf81
+boostHeatColor: d9ffc7
+consumes: {
+  liquid: {
+    liquid: nitrogen-2
+    amount: 0.3
+    optional: true
+    booster: true
+  }
+}
+range: 3
+drillTime: 180
+ambientSound: drill
+ambientSoundVolume: 0.08
+squareSprite: false

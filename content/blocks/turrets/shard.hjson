@@ -1,0 +1,71 @@
+type: ItemTurret
+name: Focus
+description: A small turret, fires small bullets at targets.
+category: turret
+size: 2
+health: 500
+range: 180
+rotateSpeed: 5
+reload: 40
+xRand: 1
+recoil: 1
+outlineColor: 22222e
+outlineRadius: 5
+heatColor: 979faa
+inaccuracy: 4
+shootSound: shootAlt
+shoot: {
+  shots: 4
+  shotDelay: 4
+}
+requirements: [
+  tantalum/60
+  nihilite/95
+]
+researchCost: [
+  tantalum/120
+  nihilite/190
+]  
+drawer: {
+  type: DrawTurret
+  basePrefix: heat-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -front
+      mirror: true
+      heatColor: 979faa
+      under: true
+      progress: recoil
+      moveY: -1.2
+      moveX: 1.2
+    }
+  ]
+}
+ammoTypes: {
+  nihilite: {
+    type: BasicBulletType
+    backSprite: mine-bullet
+    speed: 6
+    lifetime: 36
+    damage: 40
+    width: 14
+    height: 20
+    frontColor: ffffff
+    backColor: 778d88
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+    ammoMultiplier: 4
+    collidesTiles: true
+    hitEffect: pointHit
+    trailChance: 0.3
+    trailLength: 8
+    trailEffect: disperseTrail
+    trailRotation: true
+    trailWidth: 4
+    trailColor: 778d88
+  }
+}
+research: {
+  parent: 1-core-gleam
+}

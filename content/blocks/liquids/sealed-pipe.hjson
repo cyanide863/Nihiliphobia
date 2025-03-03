@@ -1,0 +1,15 @@
+type: Conduit
+name: Sealed Pipe
+description: Transports liquids forward.
+category: liquid
+research: core-1
+requirements: [
+  nihilite/2
+]
+health: 35
+botColor: 17171f
+leaks: false
+junctionReplacement: sealed-pipe-junction
+bridgeReplacement: sealed-pipe-overpass
+underBullets: true
+researchCostMultiplier: 0.5

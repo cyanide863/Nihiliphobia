@@ -1,0 +1,72 @@
+type: AttributeCrafter
+attribute: steam
+name: Chlorine Harvester
+description: Harvests chlorine from withered nihilite vents.
+size: 3
+hasLiquids: true
+liquidCapacity: 48
+squareSprite: false
+outputLiquid: chlorine/0.3
+displayEfficiencyScale: 1
+baseEfficiency: 0
+minEfficiency: 1
+category: production
+research: core-1
+craftTime: 60
+requirements: [
+  nihilite/50
+  tantalum/72
+]
+researchCost: [
+  nihilite/250
+  tantalum/360
+]
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawRegion
+      suffix: -lower
+    }
+    {
+      type: DrawLiquidTile
+      drawLiquid: chlorine
+      padding: 2
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      x: 6
+      y: -6
+      spinSprite: true
+      rotateSpeed: 7
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      x: -6
+      y: -6
+      spinSprite: true
+      rotateSpeed: 7
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      x: 6
+      y: 6
+      spinSprite: true
+      rotateSpeed: 7
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      x: -6
+      y: 6
+      spinSprite: true
+      rotateSpeed: 7
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}

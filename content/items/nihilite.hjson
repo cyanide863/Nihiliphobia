@@ -1,0 +1,15 @@
+type: item
+name: Nihilite
+description: A strange mineral, is used in infrastructure
+cost: 1
+color: 778d88
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0.1
+hardness: 0.4
+research: tantalum
+hiddenOnPlanets: [
+   serpulo
+   erekir
+]

@@ -1,0 +1,55 @@
+type: mech
+name: Despot
+description: Fires dissolve artillery at enemy targets.
+speed: 0.4
+flying: false
+health: 2430
+armor: 12
+hitSize: 18
+outlineColor: 22222e
+outlineRadius: 4
+mechLegColor: 22222e
+abilities: [
+  {
+    type: MoveEffectAbility
+    minVelocity: 0.4
+    x: 0
+    y: -2.4
+    effect: artilleryTrailSmoke
+    color: ffc4c4
+    interval: 1
+  }
+]
+  weapons: [
+    {  
+      name: mech-t2-weapon
+      x: 9.5
+      y: -1
+      alternate: false
+      rotate: false
+      mirror: true
+      layerOffset: 0.001
+      reload: 40
+      continuous: true
+      alwaysContinuous: true
+      recoil: 2
+      shootCone: 20
+      shootSound: torch
+      bullet: {
+          type: ContinuousFlameBulletType
+          damage: 30
+          length: 60
+          width: 2
+          divisions: 25
+          flareWidth: 5
+          flareRotSpeed: 2
+          flareLength: 25
+          flareColor: ffc4c4
+          hitColor: ffc4c4
+          lightColor: ffc4c4
+          colors: [d1565880, ffc4c4, ffffff]
+       }
+    }
+]
+researchCostMultiplier: 1.5
+research: 10j-00-ground-mounting-bay

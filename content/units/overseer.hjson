@@ -1,0 +1,101 @@
+name: Overseer
+description: Defends the Astrum core and builds structures. Has a healing beam for block repair.
+type: flying
+rotateSpeed: 8
+template: ErekirUnitType
+coreUnitDock: true
+range: 75
+faceTarget: true
+targetPriority: -2
+lowAltitude: false
+mineWalls: true
+drawCell: false
+mineFloor: true
+fogRadius: 0
+mineHardnessScaling: false
+flying: true
+mineSpeed: 10
+mineTier: 2
+buildSpeed: 2.5
+speed: 6
+drag: 0.08
+accel: 0.09
+itemCapacity: 60
+health: 560
+armor: 3
+hitSize: 11
+engineSize: 0
+targetable : false
+hittable : false
+outlineColor: 0f0f14
+isEnemy: false
+engines: [
+  {
+    x: 0
+    y: 0
+    radius: 0
+    rotation: 0
+  }
+]
+parts: [
+  {
+    type: FlarePart
+    x: 0
+    y: 0
+    color1: ffd37f
+    spinSpeed: -3
+    radius: 12
+    followRotation: false
+  }
+  {
+    type: FlarePart
+    x: 0
+    y: 0
+    color1: ffd37f
+    spinSpeed: 0
+    radius: 20
+    spinSpeed: 6
+    sides: 2
+    followRotation: false
+  }
+  {
+    type: ShapePart
+    progress: warmup
+    color: ffd37f
+    layer: 110
+    y: 0
+    circle: true
+    hollow: false
+    radius: 5
+    stroke: 2
+  }
+]
+weapons: [
+  {
+    type: RepairBeamWeapon
+    widthSinMag: 0.11
+    beamWidth: 0.7
+    shootY: 0
+    repairSpeed: 3.5
+    fractionRepairSpeed: 0.125
+    shootCone: 15
+    healColor: ffd37f
+    // Pal.accent
+    laserColor: ffd37f
+    // Pal.accent
+    
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    x: 0
+    y: 7
+    mirror: false
+    rotate: false
+    
+    bullet: {
+      maxRange: 75
+    }
+  }
+]
+buildBeamOffset: 7

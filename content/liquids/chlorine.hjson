@@ -1,0 +1,10 @@
+name: Chlorine
+description: Used in synthesis and power, reacts very violently to hydrazine. 
+heatCapacity: 0
+explosiveness: 0.8
+temperature: 0.4
+coolant: false
+gas: true
+color: 95bf81
+flammability: 0.2
+research: nihilite

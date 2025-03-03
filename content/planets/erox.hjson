@@ -1,0 +1,61 @@
+parent: black-hole-sun
+solarSystem: black-hole-sun
+radius: 2
+camRadius: 1
+orbitRadius: 65
+orbitOffset: 210
+//broken, will have to ask for a bugfix
+atmosphereRadIn: 0.3
+atmosphereRadOut: 0.4
+atmosphereColor: 7926a6
+accessible: false
+mesh: [
+  {
+    type: HexSkyMesh
+    radius: 0
+    divisions: 5
+    speed: -4
+    color: 3f8373
+    octaves: 1
+    persistence: 1
+    seed: 34
+    scl: 1
+    thresh: 1
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.025
+    divisions: 5
+    speed: -4
+    color: 64a5a590
+    octaves: 1
+    persistence: 1
+    seed: 34
+    scl: 1
+    thresh: 0.9
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.05
+    divisions: 5
+    speed: -4
+    color: 94c7d580
+    octaves: 1
+    persistence: 1
+    seed: 34
+    scl: 1
+    thresh: 0.8
+  }
+  {
+    type: HexSkyMesh
+    radius: 0.075
+    divisions: 5
+    speed: -4
+    color: c8e9ff70
+    octaves: 1
+    persistence: 1
+    seed: 34
+    scl: 1
+    thresh: 0.7
+  }
+]

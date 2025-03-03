@@ -1,0 +1,12 @@
+type: DuctBridge
+squareSprite: false
+name: Item Duct Overpass
+description: Transports Items Over Terrain
+range: 6
+requirements: [
+  nihilite/6
+  tantalum/12
+]
+category: distribution
+speed: 3
+research: item-duct

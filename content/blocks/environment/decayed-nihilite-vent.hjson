@@ -1,0 +1,45 @@
+name: Withered Nihilite Vent
+type: SteamVent
+blendGroup: decayed-nihilite-floor
+parent: decayed-nihilite-floor
+attributes: {
+   steam: 0.11111111
+}
+variants: 2
+effect: [ 
+  {
+    type: ParticleEffect
+    particles: 5
+    baseRotation: 72
+    cone: 22
+    sizeFrom: 5
+    sizeTo: 0
+    length: 65
+    baseLength: 2
+    colorFrom: 2f3436
+    colorTo: 1f212200
+    lightColor: ffffff00
+    lightOpacity: 0
+    layer: 95
+    lifetime: 200
+    useRotation: false
+  }
+  {
+    type: ParticleEffect
+    particles: 5
+    baseRotation: 72
+    cone: 22
+    sizeFrom: 5
+    sizeTo: 0
+    length: 65
+    baseLength: 2
+    colorFrom: 2f3436
+    colorTo: 1f212200
+    lightColor: ffffff00
+    lightOpacity: 0
+    layer: 95
+    lifetime: 200
+    startDelay: 5
+    useRotation: false
+  }
+]

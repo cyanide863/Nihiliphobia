@@ -1,0 +1,5 @@
+type: Prop
+name: Carbonic Boulder
+variants: 3
+customShadow: true
+breakSound: rock-crush

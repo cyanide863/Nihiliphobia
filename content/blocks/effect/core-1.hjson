@@ -1,0 +1,23 @@
+type: CoreBlock
+name: Core: Astrum
+isFirstTier: true
+size: 4
+incinerateNonBuildable: true
+squareSprite: false
+alwaysUnlocked: true
+unitType: overseer
+armor: 20
+health: 3500
+itemCapacity: 2000
+unitCapModifier: 19
+category: effect
+requirements: [
+  tantalum/850
+  nihilite/1200
+]
+research: {
+  planet: ceriumir
+  root: true
+  name: Ceriumir
+  requiresUnlock: false
+}

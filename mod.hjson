@@ -1,0 +1,9 @@
+"displayName": "Nihilophobia",
+"name": "void-mod",
+"author": "[#1e1e1e[]]H[#353535[]]Y[#4e4e4e[]]P[#696969[]]E[#858585[]]R[#c0c0c0[]]I[#dfdfdf[]]U[#ffffff[]]M
+"description": "Void."
+"minGameVersion": "146",
+"version": "[cyan]0.01"
+dependencies: [
+"multi-block-lib"
+]
